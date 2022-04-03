@@ -21,7 +21,7 @@ jobs:
         id: build-image
         run: |
           docker build -t volva .
-          docker run --rm -it --name volva volva > data.json
+          docker run -i --name volva volva > data.json
 
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
