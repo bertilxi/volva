@@ -1,5 +1,4 @@
 import arrays
-import os
 import json
 import client {
 	Binance,
@@ -85,7 +84,5 @@ fn main() {
 
 	prices := threads.wait()
 
-	println(prices)
-
-	os.write_file('results.json', json.encode(prices)) ?
+	print(json.encode(prices))
 }
