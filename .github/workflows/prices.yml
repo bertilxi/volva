@@ -26,7 +26,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Fetch prices
-          
           branch: main
-
-          file_pattern: data.json
